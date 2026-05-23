@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+backend/venv/
+backend/.env
+*.egg-info/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Uploads
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tools
+tools/
+
+# Claude
+.claude/

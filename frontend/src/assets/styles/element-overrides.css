@@ -1,0 +1,270 @@
+/* ===== Element Plus Theme Overrides ===== */
+
+/* Primary color */
+:root {
+  --el-color-primary: #6366f1;
+  --el-color-primary-light-1: #747bf2;
+  --el-color-primary-light-2: #8589f4;
+  --el-color-primary-light-3: #9698f5;
+  --el-color-primary-light-4: #a7a7f7;
+  --el-color-primary-light-5: #b1b3f8;
+  --el-color-primary-light-6: #c2c3fa;
+  --el-color-primary-light-7: #d3d4fb;
+  --el-color-primary-light-8: #e4e4fd;
+  --el-color-primary-light-9: #f0f0fe;
+  --el-color-primary-dark-2: #4f46e5;
+
+  --el-color-success: #10b981;
+  --el-color-warning: #f59e0b;
+  --el-color-danger: #ef4444;
+  --el-color-info: #6b7280;
+
+  --el-border-radius-base: 8px;
+  --el-border-radius-small: 6px;
+  --el-border-radius-round: 20px;
+
+  --el-border-color: #e2e8f0;
+  --el-border-color-light: #f1f5f9;
+  --el-border-color-lighter: #f8fafc;
+
+  --el-fill-color-light: #f8fafc;
+  --el-fill-color-lighter: #fafbfc;
+  --el-fill-color-blank: #ffffff;
+
+  --el-text-color-primary: #1e293b;
+  --el-text-color-regular: #475569;
+  --el-text-color-secondary: #64748b;
+  --el-text-color-placeholder: #94a3b8;
+
+  --el-font-size-base: 14px;
+  --el-font-family: var(--font-family);
+
+  --el-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --el-box-shadow-light: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Buttons ===== */
+.el-button {
+  border-radius: var(--radius-md) !important;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.el-button--primary:not(.is-link):not(.is-text):not(.is-plain) {
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.el-button--primary:not(.is-link):not(.is-text):not(.is-plain):hover,
+.el-button--primary:not(.is-link):not(.is-text):not(.is-plain):focus {
+  background: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+
+/* ===== Input ===== */
+.el-input__wrapper {
+  border-radius: var(--radius-md) !important;
+  box-shadow: 0 0 0 1px var(--border-color) inset !important;
+  transition: var(--transition);
+}
+
+.el-input__wrapper:hover {
+  box-shadow: 0 0 0 1px var(--color-primary-light) inset !important;
+}
+
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--color-primary) inset, 0 0 0 3px rgba(99, 102, 241, 0.1) inset !important;
+}
+
+/* ===== Cards ===== */
+.el-card {
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: var(--transition);
+}
+
+.el-card:hover {
+  box-shadow: var(--shadow-md) !important;
+}
+
+.el-card__body {
+  padding: 20px !important;
+}
+
+/* ===== Table ===== */
+.el-table {
+  --el-table-border-color: var(--border-light);
+  --el-table-header-bg-color: #f8fafc;
+  --el-table-row-hover-bg-color: #f1f5f9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.el-table th.el-table__cell {
+  background-color: #f8fafc !important;
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.el-table td.el-table__cell {
+  border-bottom: 1px solid var(--border-light) !important;
+  padding: 14px 0 !important;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background: transparent !important;
+}
+
+/* ===== Dialog ===== */
+.el-dialog {
+  border-radius: var(--radius-xl) !important;
+  box-shadow: var(--shadow-xl) !important;
+  overflow: hidden;
+}
+
+.el-dialog__header {
+  padding: 20px 24px 16px !important;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.el-dialog__title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+}
+
+.el-dialog__body {
+  padding: 20px 24px !important;
+}
+
+.el-dialog__footer {
+  padding: 16px 24px 20px !important;
+  border-top: 1px solid var(--border-light);
+}
+
+/* ===== Drawer ===== */
+.el-drawer {
+  border-radius: var(--radius-xl) 0 0 var(--radius-xl) !important;
+}
+
+.el-drawer__header {
+  padding: 20px 24px !important;
+  margin-bottom: 0 !important;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.el-drawer__body {
+  padding: 20px 24px !important;
+}
+
+/* ===== Tags ===== */
+.el-tag {
+  border-radius: 6px !important;
+  border: none !important;
+  font-weight: 500;
+}
+
+.el-tag--small {
+  padding: 2px 8px !important;
+}
+
+/* ===== Pagination ===== */
+.el-pagination {
+  --el-pagination-button-width: 32px;
+  --el-pagination-button-height: 32px;
+}
+
+.el-pagination .btn-prev,
+.el-pagination .btn-next,
+.el-pagination .el-pager li {
+  border-radius: var(--radius-sm) !important;
+}
+
+.el-pagination .el-pager li.is-active {
+  background: var(--color-primary) !important;
+  color: #fff !important;
+}
+
+/* ===== Select ===== */
+.el-select .el-input__wrapper {
+  border-radius: var(--radius-md) !important;
+}
+
+/* ===== Tabs ===== */
+.el-tabs__item {
+  font-weight: 500 !important;
+}
+
+.el-tabs__item.is-active {
+  color: var(--color-primary) !important;
+}
+
+.el-tabs__active-bar {
+  background-color: var(--color-primary) !important;
+}
+
+/* ===== Message Box ===== */
+.el-message-box {
+  border-radius: var(--radius-lg) !important;
+}
+
+/* ===== Menu (for sidebar) ===== */
+.el-menu {
+  border-right: none !important;
+}
+
+/* ===== Form ===== */
+.el-form-item__label {
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+}
+
+/* ===== Upload ===== */
+.el-upload-dragger {
+  border-radius: var(--radius-lg) !important;
+  border: 2px dashed var(--border-color) !important;
+  transition: var(--transition);
+}
+
+.el-upload-dragger:hover {
+  border-color: var(--color-primary) !important;
+}
+
+/* ===== Descriptions ===== */
+.el-descriptions {
+  --el-descriptions-item-bordered-label-background: #f8fafc;
+}
+
+/* ===== Collapse ===== */
+.el-collapse-item__header {
+  font-weight: 500;
+}
+
+/* ===== Empty ===== */
+.el-empty__description p {
+  color: var(--text-muted);
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
